@@ -9,9 +9,10 @@ import os
 import scipy as sp
 import matplotlib.pyplot as plt
 
-data_dir = os.path.join(
-    os.path.dirname(os.path.realpath(__file__)), "..", "data")
-data = sp.genfromtxt(os.path.join(data_dir, "web_traffic.tsv"), delimiter="\t")
+# data_dir = os.path.join(
+#     os.path.dirname(os.path.realpath(__file__)), "..", "data")
+# data = sp.genfromtxt(os.path.join(data_dir, "web_traffic.tsv"), delimiter="\t")
+data = sp.genfromtxt(os.path.join("web_traffic.tsv"), delimiter="\t")
 print(data[:10])
 
 # all examples will have three classes in this file

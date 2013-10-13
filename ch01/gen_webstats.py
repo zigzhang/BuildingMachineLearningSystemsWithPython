@@ -33,10 +33,10 @@ plt.autoscale(tight=True)
 plt.grid()
 plt.savefig(os.path.join("..", "1400_01_01.png"))
 
-data_dir = os.path.join(
-    os.path.dirname(os.path.realpath(__file__)), "..", "data")
+# data_dir = os.path.join(
+#     os.path.dirname(os.path.realpath(__file__)), "..", "data")
 
 # sp.savetxt(os.path.join("..", "web_traffic.tsv"),
 # zip(x[~y.mask],y[~y.mask]), delimiter="\t", fmt="%i")
 sp.savetxt(os.path.join(
-    data_dir, "web_traffic.tsv"), list(zip(x, y)), delimiter="\t", fmt="%s")
+    "web_traffic.tsv"), list(zip(x, y)), delimiter="\t", fmt="%s")
